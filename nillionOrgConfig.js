@@ -1,12 +1,11 @@
+import 'dotenv/config.js';
+
 export const orgConfig = {
-  // demo org credentials
-  // in a production environment, make sure to put your org's credentials in environment variables
   orgCredentials: {
-    secretKey:
-      "a786abe58f933e190d01d05b467838abb1e391007a674d8a3aef106e15a0bf5a",
-    orgDid: "did:nil:testnet:nillion1vn49zpzgpagey80lp4xzzefaz09kufr5e6zq8c",
+    secretKey: process.env.SECRET_KEY,
+    orgDid: process.env.ORG_DID,
   },
-  // demo node config
+  
   nodes: [
     {
       url: "https://nildb-zy8u.nillion.network",
