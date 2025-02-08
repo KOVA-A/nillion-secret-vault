@@ -44,7 +44,7 @@ async function storeTraderData() {
     // Log first 5 records
     console.log(
       "Most recent records",
-      decryptedCollectionData.slice(0, data.length)
+      decryptedCollectionData.slice(0, traderData.length)
     );
   } catch (error) {
     console.error("❌ SecretVaultWrapper error:", error.message);
